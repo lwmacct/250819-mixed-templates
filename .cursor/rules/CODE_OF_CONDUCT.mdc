@@ -2,5 +2,12 @@
 alwaysApply: true
 ---
 
+# 包管理工具
 - 所有 Python 相关指令必须通过 `uv` 执行, 这是正确执行 Python 脚本的唯一方式
+
+# 文档查阅
 - 对于 框架/库类, 尽可能调用 MCP 工具 Context7 来获取使用方法和帮助文档
+
+# 编程语言
+- golang 如果代码中未指明使用日志库, 那么使用 slog 来输出日志
+- golang 如果需要添加库, 使用 go get 来添加库, 然后 go mod tidy, 不要直接修改 go.mod 文件
